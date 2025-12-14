@@ -1,0 +1,292 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  background: linear-gradient(135deg, #f6f7f5, #eaf2ff);
+  color: #1f2937;
+}
+
+/* ---------- Header & Nav ---------- */
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(246, 247, 245, 0.85); /* Cloud Dancer */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #1e40af;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 24px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 24px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #1e40af;
+}
+
+.hero h3 {
+  font-weight: 400;
+  color: #475569;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 16px auto;
+  line-height: 1.7;
+}
+
+/* ---------- Resume ---------- */
+#resume h3 {
+  margin-top: 40px;
+  color: #1e40af;
+}
+
+#resume ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 20px;
+  padding-left: 20px;
+}
+
+#resume li {
+  color: #334155;
+}
+
+/* ---------- Projects ---------- */
+.projects-grid,
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* card หลัก */
+.card {
+  background: #f6f7f5; /* Cloud Dancer */
+  border-radius: 22px;
+  padding: 32px;
+  border: 1px solid #e5e7eb; /* ใช้เส้นแทนเงา */
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #93c5fd; /* ฟ้าอ่อน */
+}
+
+.card header {
+  padding: 0;
+  margin-bottom: 12px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+.card header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e3a8a;
+}
+
+/* ปี / tech */
+.card header .year {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ข้อความอธิบาย */
+.card p {
+  margin: 18px 0 0;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* ---------- Image row (แนวนอน + เลื่อน) ---------- */
+
+.images {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6px;
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+.images::-webkit-scrollbar {
+  height: 6px;
+}
+
+.images::-webkit-scrollbar-thumb {
+  background: #bfdbfe;
+  border-radius: 10px;
+}
+
+/* รูป */
+.images img {
+  width: 280px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex-shrink: 0;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.images img:hover {
+  transform: scale(1.03);
+  border-color: #93c5fd;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .card {
+    padding: 24px;
+  }
+
+  .images img {
+    width: 220px;
+    height: 140px;
+  }
+
+  .card header h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .images img {
+    width: 200px;
+    height: 130px;
+  }
+}
+
+
+/* ---------- Contact ---------- */
+.contact-form {
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Back to Top ---------- */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #f6f7f5;
+  color: #64748b;
+}
