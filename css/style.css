@@ -1,4 +1,3 @@
-/* ---------- Base ---------- */
 * {
   box-sizing: border-box;
 }
@@ -14,12 +13,11 @@ body {
   color: #1f2937;
 }
 
-/* ---------- Header & Nav ---------- */
 body > header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(246, 247, 245, 0.85); /* Cloud Dancer */
+  background: rgba(255, 255, 255, 0.85); 
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -58,7 +56,6 @@ body > header {
   color: #1e40af;
 }
 
-/* ---------- Sections ---------- */
 .section {
   max-width: 1100px;
   margin: auto;
@@ -71,7 +68,6 @@ body > header {
   margin-bottom: 24px;
 }
 
-/* ---------- Hero ---------- */
 .hero {
   text-align: left;
   padding-top: 120px;
@@ -93,7 +89,6 @@ body > header {
   line-height: 1.7;
 }
 
-/* ---------- Resume ---------- */
 #resume {
   max-width: 900px;
   margin: auto;
@@ -105,7 +100,7 @@ body > header {
 
 #resume h2 {
   font-size: 2rem;
-  color: #1e40af; /* ฟ้าเข้ม */
+  color: #1e40af; 
   margin-bottom: 20px;
   text-align: center;
 }
@@ -120,10 +115,10 @@ body > header {
 
 #resume h3 {
   font-size: 1.3rem;
-  color: #2563eb; /* ฟ้าไล่เฉด */
+  color: #2563eb; 
   margin-bottom: 12px;
   margin-top: 24px;
-  border-bottom: 2px solid #bfdbfe; /* เส้นฟ้าอ่อนใต้หัวข้อ */
+  border-bottom: 2px solid #bfdbfe; 
   padding-bottom: 4px;
 }
 
@@ -137,8 +132,8 @@ body > header {
 }
 
 #resume li {
-  background: #e0f0ff; /* ฟ้าอ่อนมาก */
-  color: #1e40af;       /* ฟ้าเข้ม */
+  background: #e0f0ff;
+  color: #1e40af;      
   padding: 8px 12px;
   border-radius: 12px;
   font-weight: 500;
@@ -147,11 +142,10 @@ body > header {
 }
 
 #resume li:hover {
-  background: #c7e0ff; /* ฟ้าเข้มขึ้นเวลาชี้ */
+  background: #c7e0ff; 
 }
 
 
-/* ---------- Projects ---------- */
 .projects-grid,
 .grid {
   display: flex;
@@ -159,18 +153,17 @@ body > header {
   gap: 60px;
 }
 
-/* card หลัก */
 .card {
   background: #fffefa; 
   border-radius: 22px;
   padding: 32px;
-  border: 1px solid #e5e7eb; /* ใช้เส้นแทนเงา */
+  border: 1px solid #e5e7eb; 
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: #93c5fd; /* ฟ้าอ่อน */
+  border-color: #93c5fd;
 }
 
 .card header {
@@ -186,7 +179,6 @@ body > header {
   color: #1e3a8a;
 }
 
-/* ปี / tech */
 .card header .year {
   display: block;
   margin-top: 6px;
@@ -194,14 +186,12 @@ body > header {
   color: #64748b;
 }
 
-/* ข้อความอธิบาย */
 .card p {
   margin: 18px 0 0;
   line-height: 1.7;
   color: #334155;
 }
 
-/* ---------- Image row (แนวนอน + เลื่อน) ---------- */
 
 .images {
   margin-top: 24px;
@@ -213,7 +203,6 @@ body > header {
   scroll-behavior: smooth;
 }
 
-/* scrollbar */
 .images::-webkit-scrollbar {
   height: 6px;
 }
@@ -223,7 +212,6 @@ body > header {
   border-radius: 10px;
 }
 
-/* รูป */
 .images img {
   width: 280px;
   height: 170px;
@@ -239,7 +227,6 @@ body > header {
   border-color: #93c5fd;
 }
 
-/* ---------- Responsive ---------- */
 
 @media (max-width: 768px) {
   .card {
@@ -264,7 +251,6 @@ body > header {
 }
 
 
-/* ---------- Contact ---------- */
 .contact-form {
   max-width: 600px;
   margin-top: 30px;
@@ -372,7 +358,6 @@ footer {
   flex-wrap: wrap;
 }
 
-/* ปุ่มวงกลม */
 .circle-btn {
   width: 140px;
   height: 140px;
@@ -387,37 +372,36 @@ footer {
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
-/* สีแต่ละปุ่ม */
+
 .circle-btn.resume {
-  background: #dbeafe; /* ฟ้าอ่อน */
+  background: #dbeafe; 
 }
 
 .circle-btn.project {
-  background: #fde68a; /* เหลืองอ่อน */
+  background: #fde68a; 
 }
 
 .circle-btn.contact {
-  background: #fce7f3; /* ชมพูอ่อน */
+  background: #fce7f3;
 }
 
-/* hover เบาๆ */
 .circle-btn:hover {
   transform: scale(1.05);
 }
 .contact-container {
   display: flex;
-  gap: 40px; /* ระยะห่างระหว่างข้อความและฟอร์ม */
-  align-items: flex-start; /* จัดฟอร์มให้ตรงกับข้อความด้านบน */
-  flex-wrap: wrap; /* ให้พับลงมาถ้าหน้าจอเล็ก */
+  gap: 40px; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
 }
 
 .contact-info {
-  flex: 1; /* ครึ่งซ้าย */
-  min-width: 250px; /* ป้องกันเล็กเกินไป */
+  flex: 1; 
+  min-width: 250px; 
 }
 
 .contact-form {
-  flex: 1; /* ครึ่งขวา */
+  flex: 1; 
   min-width: 300px;
 }
 .contact-info {
@@ -427,12 +411,12 @@ footer {
   font-family: 'Prompt', sans-serif;
   color: #1f2937;
   line-height: 1.6;
-  text-align: left;      /* ข้อความชิดซ้าย */
+  text-align: left;      
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* จัดกลางแนวตั้ง */
-  align-items: flex-start;  /* ชิดซ้ายแนวนอน */
-  padding: 20px;            /* เว้นระยะด้านใน */
+  justify-content: center;  
+  align-items: flex-start;  
+  padding: 20px;            
   box-sizing: border-box;
 }
 
@@ -453,4 +437,23 @@ footer {
   color: #334155;
   margin-top: 8px;
   font-size: 0.95rem;
+}
+
+body {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #0f172a;
+  color: white;
+}
+
+/* ปุ่ม toggle */
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
