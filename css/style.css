@@ -99,146 +99,7 @@ body.dark .logo {
   line-height: 1.7;
 }
 
-#resume {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 24px;
-  background: linear-gradient(135deg, #f0f7ff, #e0f0ff); /* ฟ้าอ่อน */
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.05); /* เงาเบา ๆ */
-}
 
-#resume h2 {
-  font-size: 2rem;
-  color: #1e40af; 
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#resume p {
-  color: #1e40af; 
-  line-height: 1.8;
-  margin-bottom: 32px;
-  font-size: 1rem;
-  text-align: justify;
-}
-
-#resume h3 {
-  font-size: 1.3rem;
-  color: #1e40af; 
-  margin-bottom: 12px;
-  margin-top: 24px;
-  border-bottom: 2px solid #bfdbfe; 
-  padding-bottom: 4px;
-}
-
-#resume ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px 20px;
-  list-style: none;
-  padding-left: 0;
-  margin-top: 12px;
-}
-
-#resume li {
-  background: #e0f0ff;
-  color: #1e40af;      
-  padding: 8px 12px;
-  border-radius: 12px;
-  font-weight: 500;
-  text-align: center;
-  transition: background 0.25s ease;
-}
-
-#resume li:hover {
-  background: #c7e0ff; 
-}
-
-
-.projects-grid,
-.grid {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.card {
-  border-radius: 22px;
-  padding: 32px;
-  border: 1px solid #e5e7eb; 
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  border-color: #93c5fd;
-}
-
-.card header {
-  padding: 0;
-  margin-bottom: 12px;
-  border: none;
-  box-shadow: none;
-  background: transparent;
-}
-.card header h2 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.card header .year {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.85rem;
-  color: #64748b;
-}
-
-.card p {
-  margin: 18px 0 0;
-  line-height: 1.7;
-  color: #555; 
-}
-
-body.dark .card p {
-  color: #b0b6bf; 
-}
-
-
-
-.images {
-  margin-top: 24px;
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 6px;
-  scroll-behavior: smooth;
-}
-
-.images::-webkit-scrollbar {
-  height: 6px;
-}
-
-.images::-webkit-scrollbar-thumb {
-  background: #bfdbfe;
-  border-radius: 10px;
-}
-
-.images img {
-  width: 280px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 14px;
-  flex-shrink: 0;
-  border: 1px solid #e5e7eb;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.images img:hover {
-  transform: scale(1.03);
-  border-color: #93c5fd;
-}
 
 
 @media (max-width: 768px) {
@@ -493,8 +354,6 @@ body.dark .hero-text {
   stroke-width: 1.5;
 }
 
-
-
 .contact-info strong {
   display: block;
   font-weight: 600;
@@ -525,14 +384,14 @@ a {
   color: inherit;
 }
 
-.imagesmoodmoode {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 6px;
+#experience .card,
+#activities .card {
+  max-width: 1600px;   
+  width: 100%;
+  margin-bottom: 16px;
 }
 
-.imagesmoodmoode img {
-  width: 100%;
-  border-radius: 12px;
+#experience h2,
+#activities h2 {
+  margin-bottom: 12px;
 }

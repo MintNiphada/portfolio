@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niphada's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/project.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -35,9 +36,9 @@
     </div>
   </div>
   <div class="home-actions">
-    <a href="#resume" class="circle-btn resume">Resume</a>
-    <a href="#project" class="circle-btn project">Projects</a>
-    <a href="#contact" class="circle-btn contact">Contact</a>
+    <a href="#resume" class="circle-btn resume"><strong>Resume</strong></a>
+    <a href="#project" class="circle-btn project"><strong>Projects</strong></a>
+    <a href="#contact" class="circle-btn contact"><strong>Contact</strong></a>
   </div>
 
 </section>
@@ -161,270 +162,149 @@
        
 <section id="project" class="section">
   <h2>Featured Works</h2>
-  <h3>Featured Implementations</h3>
 
 <div class="grid">
-<article class="card" aria-labelledby="projectMoodMood">
-  <header>
-    <h2 id="project2">MoodMood - Personal Mood Journaling Web Application</h2>
-    <span class="year">2025 - Present • Ionic React, Node.js, MongoDB</span>
-  </header>
-  <p>Successfully built a secure, real-time mood journaling platform with an intuitive dashboard,
-    enabling users to track mental health trends through seamless data visualization.
-  </p>
-  <p><strong>Target:</strong> Develop a privacy-focused mental health web application to help users
-    monitor daily moods, activities, and emotional patterns for self-awareness and well-being.
-  </p>
-  <p><strong>Action:</strong> Designed and developed a full-stack system including NoSQL data modeling,
-    RESTful APIs, responsive UI, and secure PIN-based authentication.
-  </p>
-  <p><strong>Skills:</strong> Ionic Framework + React, Node.js (Express), MongoDB Atlas, Postman,
-    Figma, GitHub.
-  </p>
-  <p><strong>Applied Theory:</strong> Implemented 3-Tier Architecture and advanced state management
-    to deliver real-time emotional insights and statistical visualizations.
-  </p><br>
-<a href="https://github.com/MintNiphada/ProjectMoodMood" target="_blank" class="link-btn">
-  <i data-lucide="github"></i> View GitHub Repository
-</a>
-  <div class="imagesmoodmoode">
-    <img src="css/images/mood1.png" alt="MoodMood">
-    <img src="css/images/mood2.png" alt="MoodMood">
-    <img src="css/images/mood3.png" alt="MoodMood">
-    <img src="css/images/mood4.png" alt="MoodMood">
-    <img src="css/images/mood5.png" alt="MoodMood">
+<h3>Featured Implementations</h3>
+<a href="projects/moodmood.html" class="project-card">
+  <div class="card-header">
+    <h3>MoodMood — Personal Mood Journal</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Dec 2025 - Present</span>
+  <p>Personal mood journaling web app with real-time analytics and data visualization.</p>
+  <div class="tags">
+    <span>Ionic React</span>
+    <span>Node.js</span>
+    <span>MongoDB</span>
+  </div>
+</a>
 
-<article class="card" aria-labelledby="projectMS">
-  <header>
-    <h2 id="project3">MNStudio - E-Commerce & Inventory Management Platform</h2>
-    <span class="year">2025 - Present • Spring Boot, Thymeleaf, PostgreSQL</span>
-  </header>
-  <p>Built a secure e-commerce and inventory management platform for handmade crafts,
-    enabling transparent sales tracking and online post-event ordering.
+<a href="projects/MNStudio.html" class="project-card">
+  <div class="card-header">
+    <h3>MNStudio - E-Commerce & Inventory Management Platform</h3>
+    <i data-lucide="arrow-up-right"></i>
+  </div>
+  <span class="date">Jan 2026 - Present</span>
+  <p>
+    Secure e-commerce and inventory management platform for handmade crafts with
+    transparent sales tracking and online ordering.
   </p>
-  <p><strong>Target:</strong> Develop a specialized system for handmade sellers to manage products,
-    inventory, and customer orders while improving business transparency.
-  </p>
-  <p><strong>Action:</strong> Designed the storefront UI, product workflows, and backend infrastructure,
-    including authentication, inventory control, and transaction management.
-  </p>
-  <p><strong>Skills:</strong> Java Spring Boot, Thymeleaf, Spring Security, JPA/Hibernate,
-    PostgreSQL, Postman, GitHub.
-  </p>
-  <p><strong>Applied Theory:</strong> Implemented Spring Security with BCryptPasswordEncoder and
-    applied ORM using JPA/Hibernate for reliable data management.
-  </p><br>
-  <a href="https://github.com/MintNiphada/MNStudio" target="_blank" class="link-btn">
-    <i data-lucide="github"></i> View GitHub Repository
-  </a>
-</article>
+  <div class="tags">
+    <span>Spring Boot</span>
+    <span>Thymeleaf</span>
+    <span>PostgreSQL</span>
+  </div>
+</a>
 
 <h3>Specialized & Academic Excellence</h3>
-<article class="card" aria-labelledby="projectAI">
-  <header>
-    <h2 id="project4">Real-Time AI-Based Classroom Student Behavior Analysis System</h2>
-    <span class="year">2025 - Present • Python, AI, Computer Vision</span>
-  </header>
-  <p>Developing a real-time AI system to analyze student behavior in computer labs,
-    helping instructors monitor engagement despite physical barriers like monitors
-    or split-classroom setups.
-  </p>
-  <p><strong>Target:</strong> Build an AI-powered classroom monitoring system that supports
-    real-time engagement analysis for improved teaching effectiveness.
-  </p>
-  <p><strong>Action:</strong> Conducting R&D on AI models, designing an image processing pipeline,
-    and developing a web-based dashboard for real-time behavioral visualization.
-  </p>
-  <p><strong>Skills:</strong> AI & Machine Learning, Digital Image Processing, Pose Estimation,
-    Python, Data Visualization.
-  </p>
-  <p>
-    <strong>Applied Theory:</strong> Implemented pose estimation under occlusion constraints and
-    real-time data processing for low-latency classroom feedback.
-  </p>
-  <div class="images">
-    <img src="css/images/classroom1.png" alt="Classroom AI System">
-    <img src="css/images/classroom2.png" alt="Classroom AI System">
+<a href="projects/classroom.html" class="project-card">
+  <div class="card-header">
+    <h3>Real-Time AI-Based Classroom Student Behavior Analysis System</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Jun 2025 - Present</span>
+  <p>Real-time AI system to analyze student behavior in computer labs, helping instructors
+    monitor engagement despite physical barriers.
+  </p>
+  <div class="tags">
+    <span>Python</span>
+    <span>Computer Vision</span>
+    <span>AI</span>
+    <span>Pose Estimation</span>
+  </div>
+</a>
 
 <h3>Team Collaboration & Large Scale</h3>
-<article class="card" aria-labelledby="project5">
-  <header>
-    <h2 id="project5">CP KKU Study Summary System</h2>
-    <span class="year">Jul - Oct 2025 • Express.js, MongoDB</span>
-  </header>
-  <p>
-    Built a centralized knowledge-sharing platform for students in the College of Computing,
-    connecting seniors and juniors while simplifying study material sharing.
-  </p>
-  <p>
-    <strong>Target:</strong> Create a student-focused platform that supports collaborative
-    learning and easy access to shared academic resources.
-  </p>
-  <p>
-    <strong>Action:</strong> Collaborated in a cross-functional team of 8 (CS & IT), co-designed
-    UI/UX, and independently developed the Admin Panel including Issue Reporting & Resolution.
-  </p>
-  <p>
-    <strong>Skills:</strong> Express.js, MongoDB (NoSQL), Data Serialization, Figma,
-    Cross-functional Teamwork.
-  </p>
-  <p>
-    <strong>Applied Theory:</strong> Applied Data Serialization for efficient handling of PDFs/images
-    and User-Centered Design principles for student-centered usability.
-  </p>
-  <br>
-  <a href="https://github.com/AlphaAged/ProjectData_ser" target="_blank" class="link-btn">
-    <i data-lucide="github"></i> View GitHub Repository
-  </a>
-  <div class="images">
-      <img src="css/images/note5.png" alt="Online Study Notes Sharing Platform">
-      <img src="css/images/note6.png" alt="Online Study Notes Sharing Platform">
-      <img src="css/images/note2.png" alt="Online Study Notes Sharing Platform">
-      <img src="css/images/note3.png" alt="Online Study Notes Sharing Platform">
+<a href="projects/studynote.html" target="_blank" class="project-card">
+  <div class="card-header">
+    <h3>CP KKU Study Summary System</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Jul - Oct 2025</span>
+  <p>
+    Centralized knowledge-sharing platform for students, connecting seniors and juniors
+    while simplifying study material sharing.
+  </p>
+  <div class="tags">
+    <span>Express.js</span>
+    <span>MongoDB</span>
+    <span>NoSQL</span>
+    <span>Team Collaboration</span>
+  </div>
+</a>
 
-<article class="card" aria-labelledby="project6">
-  <header>
-    <h2 id="project6">Classroom Search Website (Faculty of Science, KKU)</h2>
-    <span class="year">Aug - Oct 2025 • Express.js, MongoDB</span>
-  </header>
-  <p>Developed an intuitive classroom search and navigation website for new students and visitors,
+<a href="projects/classroom-search.html" class="project-card">
+  <div class="card-header">
+    <h3>Classroom Search Website (Faculty of Science, KKU)</h3>
+    <i data-lucide="arrow-up-right"></i>
+  </div>
+  <span class="date">Aug - Oct 2025</span>
+  <p>
+    Classroom search and navigation website for new students and visitors,
     improving campus wayfinding during major events like Science Week.
   </p>
-  <p><strong>Target:</strong> Build an accessible classroom search tool with integrated navigation
-    to support visitors and first-year students at KKU.
-  </p>
-  <p><strong>Action:</strong> Collaborated in a team of 8 to design UX/UI and implement backend services,
-    including Google Maps integration for accurate navigation.
-  </p>
-  <p><strong>Skills:</strong> Express.js, MongoDB, Google Maps API, Postman, UX/UI Design, Deployment.
-  </p>
-  <p><strong>Applied Theory:</strong> Applied User-Centered Design (UCD) and API testing with Postman
-    to ensure smooth data flow and reliable navigation services.
-  </p>
-  <br>
-  <a href="https://github.com/MintNiphada/projectGE" target="_blank" class="link-btn">
-    <i data-lucide="github"></i> View GitHub Repository
-  </a>
-  <a href="https://room-search-black.vercel.app/" target="_blank" class="link-btn">
-    Visit Live Demo
-  </a>
-  <div class="images">
-    <img src="css/images/room1.png" alt="Classroom Search Website">
-    <img src="css/images/room2.png" alt="Classroom Search Website">
-    <img src="css/images/room3.png" alt="Classroom Search Website">
+  <div class="tags">
+    <span>Express.js</span>
+    <span>MongoDB</span>
+    <span>Google Maps API</span>
+    <span>UX/UI</span>
   </div>
-</article>
+</a>
 
-<article class="card" aria-labelledby="projectLaundry">
-  <header>
-    <h2 id="project7">Automatic Laundry Queue Booking Website</h2>
-    <span class="year">July - October 2024 • Laravel, MySQL</span>
-  </header>
-  <p>
-    Built a web-based laundry reservation system to optimize machine bookings and simplify
-    administrative management tasks.
-  </p>
-  <p>
-    <strong>Target:</strong> Develop an efficient booking platform for laundry machines with
-    streamlined admin control and issue handling.
-  </p>
-  <p>
-    <strong>Action:</strong> Collaborated in a team of 4 on UI/UX design using Figma and independently
-    developed the Admin Dashboard and Issue Reporting System.
-  </p>
-  <p>
-    <strong>Skills:</strong> Laravel Framework, PHP, MySQL, Figma, Team Collaboration.
-  </p>
-  <p>
-    <strong>Applied Theory:</strong> Implemented MVC architecture and relational database design
-    principles to ensure scalability, maintainability, and data integrity.
-  </p>
-
-  <br>
-  <div class="images">
-    <img src="css/images/Laundry1.PNG" alt="Laundry Website">
-    <img src="css/images/Laundry2.PNG" alt="Laundry Website">
-    <img src="css/images/Laundry3.PNG" alt="Laundry Website">
-    <img src="css/images/Laundry4.PNG" alt="Laundry Website">
-    <img src="css/images/Laundry5.PNG" alt="Laundry Website">
-    <img src="css/images/Laundry6.PNG" alt="Laundry Website">
+<a href="projects/laundry.html" class="project-card">
+  <div class="card-header">
+    <h3>Automatic Laundry Queue Booking Website</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Jul - Oct 2024</span>
+  <p>
+    Web-based laundry reservation system to optimize machine bookings and simplify
+    administrative management.
+  </p>
+  <div class="tags">
+    <span>Laravel</span>
+    <span>MySQL</span>
+    <span>PHP</span>
+    <span>MVC</span>
+  </div>
+</a>
 
 <h3>Foundation & Niche</h3>
-<article class="card" aria-labelledby="projectManga">
-  <header>
-    <h2 id="project8">Manga Rental System</h2>
-    <span class="year">July - October 2025 • Spring Boot, MySQL</span>
-  </header>
-  <p>
-    Developed a full-stack rental management system for a manga business with accurate inventory
-    tracking and transaction handling.
-  </p>
-  <p>
-    <strong>Target:</strong> Build a scalable e-commerce and management platform for manga rentals
-    with reliable inventory and rental workflows.
-  </p>
-  <p>
-    <strong>Action:</strong> Designed system workflows using UML and developed backend modules with
-    Spring Boot, optimizing the MySQL database schema for scalability.
-  </p>
-  <p>
-    <strong>Skills:</strong> Spring Boot, Thymeleaf, MySQL, UML Design, Postman.
-  </p>
-  <p>
-    <strong>Applied Theory:</strong> Applied OOP principles and database normalization, and verified
-    API reliability using Postman.
-  </p>
-  <br>
-  <a href="https://github.com/karntimaK/MangaRental" target="_blank" class="link-btn">
-    <i data-lucide="github"></i> View GitHub Repository
-  </a>
-    <br>
-  <div class="images">
-    <img src="css/images/manga1.png" alt="manga">
-    <img src="css/images/manga2.png" alt="manga">
-    <img src="css/images/manga3.png" alt="manga">
-    <img src="css/images/manga4.png" alt="manga">
+<a href="projects/manga.html" class="project-card">
+  <div class="card-header">
+    <h3>Manga Rental System</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Jul - Oct 2025</span>
+  <p>
+    Manga rental management system with accurate inventory tracking
+    and transaction handling.
+  </p>
+  <div class="tags">
+    <span>Spring Boot</span>
+    <span>MySQL</span>
+    <span>Thymeleaf</span>
+    <span>UML</span>
+  </div>
+</a>
 
-<article class="card" aria-labelledby="project9">
-  <header>
-    <h2 id="project9">Plant Doll Shop Website</h2>
-    <span class="year">Nov 2023 - Feb 2024 • Wix, UX/UI</span>
-  </header>
-  <p>
-    Designed an e-commerce website for a plant-themed doll shop with a strong brand identity and user-friendly layout.
-  </p>
-  <p>
-    <strong>Action:</strong> Created information architecture and a minimalist UI to improve product visibility and usability.
-  </p>
-  <p>
-    <strong>Skills:</strong> Wix, UX/UI Design, Content Management, Visual Branding.
-  </p>
-  <a href="https://niphaday.wixsite.com/my-site-1" target="_blank" class="link-btn">
-    <i data-lucide="external-link"></i> View Demo Website
-  </a>
-  <br>
-  <div class="images">
-    <img src="css/images/grassdoll1.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll2.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll3.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll4.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll5.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll6.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll7.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll8.png" alt="Plant Doll Shop Website">
-    <img src="css/images/grassdoll9.png" alt="Plant Doll Shop Website">
+<a href="projects/plant-doll.html" target="_blank" class="project-card">
+  <div class="card-header">
+    <h3>Plant Doll Shop Website</h3>
+    <i data-lucide="arrow-up-right"></i>
   </div>
-</article>
+  <span class="date">Nov 2023 - Feb 2024</span>
+  <p>
+    E-commerce website for a plant-themed doll shop with strong branding and
+    user-friendly UX/UI design.
+  </p>
+  <div class="tags">
+    <span>Wix</span>
+    <span>UX/UI</span>
+    <span>Branding</span>
+    <span>E-commerce</span>
+  </div>
+</a>
 </section>
 
 <section id="experience" class="section">
@@ -470,7 +350,6 @@
   </div>
 </section>
 
-
 <section id="contact" class="section">
   <div class="contact-container">
     <div class="contact-info">
@@ -495,16 +374,11 @@
     </form>
   </div>
 </section>
-
 </main>
-    
     <button id="backToTop" title="Go to top">↑</button>
-
     <footer>
         <p>Niphada Yayanan</p>
     </footer>
-
     <script src="script.js"></script>
-
 </body>
 </html>
