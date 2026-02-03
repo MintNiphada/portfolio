@@ -395,3 +395,31 @@ a {
 #activities h2 {
   margin-bottom: 12px;
 }
+
+.summary-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.resume-box {
+  border: 2px solid #c7d2fe;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+.resume-box summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.resume-box summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-box ul {
+  margin-top: 0.75rem;
+  padding-left: 1.2rem;
+}
