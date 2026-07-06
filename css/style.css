@@ -124,7 +124,6 @@ body.dark .logo {
   }
 }
 
-
 .contact-form {
   max-width: 600px;
   margin-top: 30px;
@@ -160,7 +159,7 @@ body.dark .logo {
   border: none;
   border-radius: 999px;
   background: #90b6df;
-  color: black;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   float: right;
@@ -278,7 +277,7 @@ body.dark .hero-text {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #1f2937;
+  color: White;
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
@@ -431,4 +430,70 @@ a {
     margin: 0 auto 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.slide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 16px;      
+    font-size: 0.9rem;      
+    font-weight: 600;
+
+    background: #a8d8ff;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.slide-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(90, 169, 255, 0.35);
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 10px;
+  background: #FFFBA8;
+  z-index: -1;
+  transform: rotate(-1deg);
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+h1::after {
+  animation: highlight 0.8s ease-out;
+}
+
+@keyframes highlight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.copy-icon {
+  font-size: 12px;
+  opacity: 0.6;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.copy-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }

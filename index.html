@@ -6,7 +6,7 @@
     <title>Niphada's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/project.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -32,6 +32,15 @@
       <h1>Hello, I'm Niphada Yayanan</h1>
       <p>This is my Computer Science Student Journey</p>
       <p>Discover my path and projects below</p>
+      <p class="slide-link">
+        <a href="https://kku-creative.my.canva.site/niphada-yayanan-portfolio"
+           target="_blank"
+           class="slide-btn">
+          View Portfolio Slides     
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </p>
+      <p>or scroll to see more</p>
     </div>
   </div>
   <div class="home-actions">
@@ -379,10 +388,13 @@
   <div class="contact-container">
     <div class="contact-info">
       <h2>Get in Touch</h2>
-      <p><i data-lucide="mail"></i> niphadayayananth@gmail.com</p>
-      <p><a href="https://github.com/MintNiphada" target="_blank"><i data-lucide="github"></i> MintNiphada</a></p>
-      <p><a href="https://www.linkedin.com/in/niphada-yayanan-mint" target="_blank"><i data-lucide="linkedin"></i> Niphada Yayanan</a></p>
-      <p><a href="https://www.instagram.com/niphadayy" target="_blank"><i data-lucide="instagram"></i> niphadayy</a></p>
+      <p onclick="copyEmail()" style="cursor:pointer;">
+        <i class="fa-solid fa-envelope"></i>
+        niphadayayananth@gmail.com
+        <i data-lucide="copy" class="copy-icon"></i>
+      </p>
+      <p><a href="https://github.com/MintNiphada" target="_blank"><i class="fa-brands fa-github"></i> MintNiphada</a></p>
+      <p><a href="https://www.linkedin.com/in/niphada-yayanan-mint" target="_blank"><i class="fa-brands fa-linkedin"></i> Niphada Yayanan</a></p>
     </div>
 
     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -402,8 +414,34 @@
 </main>
     <button id="backToTop" title="Go to top">↑</button>
     <footer>
-        <p>Niphada Yayanan  { Live Learn Grow }</p>
+        <p>{ Live Learn Grow }</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+  lucide.createIcons();
+    </script>
+    <script>
+    function copyEmail() {
+      navigator.clipboard.writeText("niphadayayananth@gmail.com");
+
+      const msg = document.createElement("div");
+      msg.textContent = "Email copied!";
+      msg.style.position = "fixed";
+      msg.style.bottom = "20px";
+      msg.style.left = "50%";
+      msg.style.transform = "translateX(-50%)";
+      msg.style.background = "#90b6df";
+      msg.style.color = "white";
+      msg.style.padding = "10px 20px";
+      msg.style.borderRadius = "20px";
+
+      document.body.appendChild(msg);
+
+      setTimeout(() => msg.remove(), 1500);
+    }
+    
+</script>
 </body>
 </html>
