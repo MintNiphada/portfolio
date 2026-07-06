@@ -423,3 +423,12 @@ a {
   margin-top: 0.75rem;
   padding-left: 1.2rem;
 }
+
+.certificate-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
